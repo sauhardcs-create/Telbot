@@ -16,7 +16,9 @@ threading.Thread(target=run_web).start()
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "8739715978:AAHxSCLtTYR3l3E3JJgqCbf6E5K5nkdV8FU"
+
+
+TOKEN = os.getenv("BOT_TOKEN")
 
 # Temporary memory storage
 user_profiles = {}
